@@ -28,10 +28,10 @@ pipeline {
         stage('Push Image to Docker Hub') {
             steps {
                 script {
-                    withCredentials([usernamePassword(credentialsId: 'dockerhub-credentials', usernameVariable: 'DOCKER_USERNAME', passwordVariable: 'DOCKER_PASSWORD')]) {
+                    
                         bat "docker login -u sonadukane18 -p Kashmir@25"
                         bat 'docker push sonadukane18/jenkinsdockerapp:image'
-                    }
+                    
                 }
             }
         }
