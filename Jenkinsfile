@@ -4,8 +4,8 @@ pipeline {
     stages {
         stage('Build app') {
             steps {
-                checkout([$class: 'GitSCM', branches: [[name: '*/master']],
-                          userRemoteConfigs: [[url: 'https://github.com/sonadukane18/Jenkins_Docker_Demo_Repo.git']]])
+                    checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/sonadukane18/Jenkins_Docker_Demo_Repo.git']])
+                
             }
         }
 
