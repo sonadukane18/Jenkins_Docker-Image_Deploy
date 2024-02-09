@@ -2,4 +2,5 @@
 This project is just a sample project  for jenkins and docker image deploy.
 
 - `Dockerfile`: Automates Docker image creation for containerized applications.
-- `Jenkinsfile`: Automates Jenkins pipelines with code to build, test, and deploy software.
+- `Jenkinsfile`: Automates Jenkins pipelines with YAML scripts to build, test, and deploy software.
+  
